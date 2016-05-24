@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Интерактивный тест / Ричард Ф.Фейнман</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" media="all" />
+    </head>
+    <style type="text/css"> 
+    .styled-button-3 {
+	    -webkit-box-shadow:rgba(0,0,0,0.0.1) 0 1px 0 0;
+	    -moz-box-shadow:rgba(0,0,0,0.0.1) 0 1px 0 0;
+	    box-shadow:rgba(0,0,0,0.0.1) 0 1px 0 0;
+	    background-color:#5B74A8;
+	    border:1px solid #29447E;
+	    font-family:'Lucida Grande',Tahoma,Verdana,Arial,sans-serif;
+	    font-size:12px;
+	    font-weight:700;
+	    padding:2px 6px;
+	    height:28px;
+	    color:#fff;
+	    border-radius:5px;
+	    -moz-border-radius:5px;
+	    -webkit-border-radius:5px
+    }
+    </style>
+    <body>
+        <div id="logo">
+            <h1><a href="index.html">&laquo;Узнайте, как устроен остальной мир. Разнообразие&nbsp;– стоящая вещь&raquo;. Ричард Ф.Фейнман</a></h1>
+        </div>
+        <div id="layout">
+            <div id="header">
+                <div id="menu">
+                    <ul>
+                        <li><a href="index.html">Рецензия</a></li>
+                        <li><a href="author.html">Об авторе</a></li>
+                        <li><a href="works.html">Другие работы</a></li>
+                        <li class="test current"><a href="test.html">Тест</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div id="title">
+                        <h2>Интерактивный тест<br /></h2>
+                    </div>
+                    <img style="float: right; margin-left: 10px; margin-bottom: 0px; margin-right: 0px; margin-top: 0px;" src="images/test_pic.jpg">
+                    <form id="test">
+                        <ul>
+                            <li>
+								<strong>На каком музыкальном инструменте играл Ричард Фейнман?</strong><br />
+								<label>
+									<input type="radio" name="q1" value="a1" />
+									Гитара
+								</label>
+								<br />
+								<label>
+									<input type="radio" name="q1" value="a2" />
+									Бонго
+								</label>
+								<br />
+								<label>
+									<input type="radio" name="q1" value="a3" />
+									Труба
+								</label>
+								<br />
+								<label>
+									<input type="radio" name="q1" value="a4" />
+									Скрипка
+								</label>
+								<br />
+							</li>
+                            <li>
+								<strong>Ремонтом каких приборов был увлечен Фейнман в детстве?</strong><br />
+								<label>
+									<input type="radio" name="q2" value="a1" />
+									Телефонов
+								</label>
+								<br />
+								<label>
+									<input type="radio" name="q2" value="a2" />
+									Телевизоров
+								</label>
+								<br />
+								<label>
+									<input type="radio" name="q2" value="a3" />
+									Радиоприемников
+								</label>
+								<br />
+								<label>
+									<input type="radio" name="q2" value="a4" />
+									Печатных машинок
+								</label>
+								<br />
+							</li>
+					
+                            <li>
+								<strong>Какие из перечисленных ниже учебных заведений упоминаются в книге?</strong><br />
+								<label>
+									<input type="checkbox" name="q3" value="a1" />
+									Массачусетский технологический институт
+								</label>
+								<br />
+								<label>
+									<input type="checkbox" name="q3" value="a2" />
+									Корнелльский университет
+								</label>
+								<br />
+								<label>
+									<input type="checkbox" name="q3" value="a3" />
+									Принстонский университет
+								</label>
+								<br />
+								<label>
+									<input type="checkbox" name="q3" value="a4" />
+									Университет Глазго
+								</label>
+								<br />
+								<label>
+									<input type="checkbox" name="q3" value="a5" />
+									Калифорнийский технологический институт
+								</label>
+								<br />
+							</li>
+							<li>
+								<strong>Какое двухзначное число назвал Ричард Фейнман в ответе на вопрос психиатра &laquo;Насколько вы цените жизнь?&raquo;:</strong><br />
+                                <input type="text" maxlength="2" size="60" name="q4" />
+								<br />
+							</li>	
+                        </ul>
+                        <br/>
+                        <input type="submit" class="styled-button-3" name="checkbutton" value="Проверить тест" />
+                        <input type="reset" class="styled-button-3" value="Очистить" />
+                    </form>
+                </div>
+                <div style="clear: both"> </div>
+            </div>
+            <div id="footer">
+                <p><strong>&copy; 2012 Академия управления при Президенте Республики Беларусь</strong></p>
+                <p><strong>Выполнили: Группа УИР-2, Павлов Роман и Календо Игорь</strong></p>
+            </div>
+        </div>
+    </body>
+	<script type="text/javascript">
+		function checkbutton_onclick() {
+			var mark = 0;
+			if (test[1].checked)
+				mark++;
+			if (test[6].checked)
+				mark++;
+			if (test[8].checked && test[9].checked && test[10].checked && test[12].checked && !test[11].checked)
+				mark++;
+			if (test[13].value == "64")
+				mark++;
+			alert("Ваш результат: " + mark/4*100 + "%");
+		}
+		test[14].onclick = checkbutton_onclick;
+	</script>
+</html>

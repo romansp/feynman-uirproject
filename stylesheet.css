@@ -1,0 +1,166 @@
+﻿/** GLOBAL RESETS **/
+:link,:visited {text-decoration:underline}
+h1,h2,h3,h4,h5,h6,pre,code {font-size:1em;font-weight:400;}
+ul,dl,dt,dd,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input 
+
+{margin:0; padding:0}
+a img,:link img,:visited img {border:none}
+
+/** GLOBAL SETS **/
+.clear {clear:both;}
+.hidden {display:none;}
+
+h1 {font-size: 32px;}
+h2 {font-size: 23px;}
+h3 {font-size: 20px;}
+h4 {font-size: 18px;}
+h5 {font-size: 15px;}
+h6 {font-size: 12px;}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url(images/bedge_grunge.png) repeat;
+	font-size: 12px;
+	font-family: "Verdana", sans-serif;
+	line-height: 160%;
+}
+
+#logo h1  
+{
+    width: 880px;
+    margin: 0px auto;
+padding-top: 30px;
+line-height: normal;
+text-align: right;
+}
+
+#logo h1 a { 
+text-decoration: none;
+        color: black;
+
+}
+
+#logo h1 a:hover { 
+    border-bottom-color: currentColor;
+    border-bottom-style: none;
+    border-bottom-width: 1px;
+    color: #5C6060;
+
+}
+
+#layout
+{
+	margin: 0px auto;
+	padding: 15px 50px 30px;
+	width: 880px;
+}
+
+#menu {
+	width: 880px;
+	margin: 0px auto;
+}
+
+#footer {
+    margin: 0px auto;
+    padding: 10px 10px 0px;
+    width: 860px;
+    color: #806767;
+}
+
+a:link, a:visited {
+	color: #5c5c5c;
+}
+
+a:hover, a:active {
+	color: black;
+	text-decoration: underline;
+}
+
+#page {
+	width: 880px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+
+#menu {
+	background: #FFFFFF;
+	height: 55px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+
+#menu ul {
+	margin: 0;
+	padding: 13px 0 0 5px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	margin: 0 auto;
+	float: left;
+	text-align: center;
+}
+
+#menu a{
+	display: block;
+	padding: 5px 10px;
+	margin: 0 10px;
+	text-decoration: underline;
+	font-size: 16px;
+	color: #b49292;
+	line-height:25px;
+}
+
+#menu a:hover, #menu li.current a{ 
+	color: #000000;
+	text-decoration: none;
+}
+
+#menu li.current > a { 
+	font-weight: bold; 
+}
+
+#content {
+	padding: 10px;
+	text-indent:20px;
+	text-align: justify;
+}
+
+#content p { 
+	margin-bottom: 20px;
+}
+
+#content.works {
+    text-align: left;
+}
+
+#title {
+	text-indent: 0px;
+	text-align: right;
+	font-size: 23px;
+	line-height: 110%;
+	overflow: hidden;
+	margin: 10px;
+}
+
+#test
+{
+	margin: 0 0 0 20px;
+}
+
+#test ul
+{
+	list-style: decimal;
+}
+
+#test li
+{
+	text-indent: 0px;
+	margin-top: 10px;
+}
+
+form#test input { 
+  margin-right: 3px;
+}
